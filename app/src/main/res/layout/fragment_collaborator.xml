@@ -3,12 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.CollaboratorFragment">
+    tools:context=".view.CollaboratorFragment"
+    android:layout_weight="10">
 
-    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:linksClickable="true"
+        android:textColor="#192045"
+        android:text="Nuevo colaborador"
+        android:layout_weight="1"
+        android:textStyle="bold"/>
     <ListView
-        android:id="@+id/listCollaborators"
+        android:id="@+id/list_collaborators"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:layout_weight="9"/>
 </FrameLayout>
