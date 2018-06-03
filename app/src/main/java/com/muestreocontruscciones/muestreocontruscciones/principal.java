@@ -60,8 +60,9 @@ public class principal extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
-        }
+        } else if (id == R.id.action_account) {
 
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -71,9 +72,21 @@ public class principal extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.action_account) {
+        if (id == R.id.nav_project) {
             // Handle the camera action
-        } else if (id == R.id.action_settings) {
+        } else if (id == R.id.nav_operation) {
+
+        } else if (id == R.id.nav_tasks) {
+
+        } else if (id == R.id.nav_analyst) {
+
+        } else if (id == R.id.nav_collaborator) {
+
+        } else if (id == R.id.nav_working_hour) {
+
+        } else if (id == R.id.nav_sample) {
+
+        } else if (id == R.id.nav_account) {
 
         } else if (id == R.id.loggout) {
 

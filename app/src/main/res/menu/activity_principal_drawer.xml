@@ -6,15 +6,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_project"
-            android:icon="@mipmap/ic_project"
+            android:icon="@drawable/ic_project"
             android:title="Proyectos" />
         <item
             android:id="@+id/nav_operation"
-            android:icon="@mipmap/ic_operation"
+            android:icon="@drawable/ic_operation"
             android:title="Operaciones" />
         <item
             android:id="@+id/nav_tasks"
-            android:icon="@mipmap/ic_task"
+            android:icon="@drawable/ic_task"
             android:title="Tareas" />
         <item
             android:id="@+id/nav_analyst"
@@ -22,19 +22,19 @@
             android:title="Analistas" />
         <item
             android:id="@+id/nav_collaborator"
-            android:icon="@mipmap/ic_collaborator"
+            android:icon="@drawable/ic_collaborator"
             android:title="Colaboradores" />
         <item
             android:id="@+id/nav_working_hour"
-            android:icon="@mipmap/ic_working_hour"
+            android:icon="@drawable/ic_working_hour"
             android:title="Horarios de trabajo" />
         <item
             android:id="@+id/nav_sample"
-            android:icon="@mipmap/ic_sample"
+            android:icon="@drawable/ic_sample"
             android:title="Muestreo" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="">
         <menu>
             <item
                 android:id="@+id/nav_account"
@@ -42,7 +42,7 @@
                 android:title="Cuenta" />
             <item
                 android:id="@+id/loggout"
-                android:icon="@mipmap/ic_loggout"
+                android:icon="@drawable/ic_loggout"
                 android:title="Cerrar sesicón" />
         </menu>
     </item>
