@@ -88,7 +88,7 @@ public class principal extends AppCompatActivity
         } else if (id == R.id.nav_analyst) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new AnalystFragment()).commit();
         } else if (id == R.id.nav_collaborator) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new CollaboratorFragment()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new CollaboratorFragment(this)).commit();
         } else if (id == R.id.nav_working_hour) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new WorkingHourFragment()).commit();
         } else if (id == R.id.nav_sample) {
