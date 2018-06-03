@@ -5,33 +5,45 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_project"
+            android:icon="@mipmap/ic_project"
+            android:title="Proyectos" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_operation"
+            android:icon="@mipmap/ic_operation"
+            android:title="Operaciones" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_tasks"
+            android:icon="@mipmap/ic_task"
+            android:title="Tareas" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_analyst"
+            android:icon="@mipmap/ic_analyst"
+            android:title="Analistas" />
+        <item
+            android:id="@+id/nav_collaborator"
+            android:icon="@mipmap/ic_collaborator"
+            android:title="Colaboradores" />
+        <item
+            android:id="@+id/nav_working_hour"
+            android:icon="@mipmap/ic_working_hour"
+            android:title="Horarios de trabajo" />
+        <item
+            android:id="@+id/nav_sample"
+            android:icon="@mipmap/ic_sample"
+            android:title="Muestreo" />
     </group>
 
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_account"
+                android:icon="@drawable/ic_action_account"
+                android:title="Cuenta" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/loggout"
+                android:icon="@mipmap/ic_loggout"
+                android:title="Cerrar sesicón" />
         </menu>
     </item>
 
