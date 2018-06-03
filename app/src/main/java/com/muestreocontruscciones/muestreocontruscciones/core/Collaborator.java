@@ -17,6 +17,10 @@ public class Collaborator {
         this.puesto = puesto;
     }
 
+    public Collaborator() {
+
+    }
+
     public int getId() {
         return id;
     }

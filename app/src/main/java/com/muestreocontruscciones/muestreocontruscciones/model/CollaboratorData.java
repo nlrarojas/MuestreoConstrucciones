@@ -1,23 +1,19 @@
 package com.muestreocontruscciones.muestreocontruscciones.model;
 
 import com.muestreocontruscciones.muestreocontruscciones.core.Collaborator;
-import com.muestreocontruscciones.muestreocontruscciones.util.Connection;
 
-import java.sql.CallableStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.Connection;
 import java.util.ArrayList;
 
 public class CollaboratorData {
     private ArrayList<Collaborator>  collaborators;
-    private java.sql.Connection conn;
+    private Connection conn;
 
     public CollaboratorData() {
-        conn = new Connection().connect();
     }
 
     public ArrayList<Collaborator> getCollaborators() {
-
+    /*
         String query = "{CALL sp_obtener_colaboradores()}";
         try {
             CallableStatement stmt = conn.prepareCall(query);
@@ -33,6 +29,7 @@ public class CollaboratorData {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        */
         return collaborators;
     }
 }

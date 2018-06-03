@@ -4,7 +4,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import com.mysql.jdbc.Driver;
 
 public class Connection {
     private static final String DB_URL = "jdbc:mysql://163.178.173.144/DB_REQUERIMIENTOS";
