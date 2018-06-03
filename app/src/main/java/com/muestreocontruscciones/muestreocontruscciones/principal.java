@@ -2,7 +2,6 @@ package com.muestreocontruscciones.muestreocontruscciones;
 
 import android.app.FragmentManager;
 import android.os.Bundle;
-import android.os.StrictMode;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -20,7 +19,7 @@ import com.muestreocontruscciones.muestreocontruscciones.view.SampleFragment;
 import com.muestreocontruscciones.muestreocontruscciones.view.TaskFragment;
 import com.muestreocontruscciones.muestreocontruscciones.view.WorkingHourFragment;
 
-public class principal extends AppCompatActivity
+public class Principal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
@@ -29,9 +28,6 @@ public class principal extends AppCompatActivity
         setContentView(R.layout.activity_principal);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(policy);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
