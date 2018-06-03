@@ -21,4 +21,7 @@
     <string name="userName">Administrador</string>
     <string name="permission_rationale">"Permisos de contecto son necesarios para proveer las acctiones de correo electrónico"
     </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

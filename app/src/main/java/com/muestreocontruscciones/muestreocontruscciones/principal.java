@@ -1,9 +1,7 @@
 package com.muestreocontruscciones.muestreocontruscciones;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -12,6 +10,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.muestreocontruscciones.muestreocontruscciones.view.AnalystFragment;
+import com.muestreocontruscciones.muestreocontruscciones.view.CollaboratorFragment;
+import com.muestreocontruscciones.muestreocontruscciones.view.OperationFragment;
+import com.muestreocontruscciones.muestreocontruscciones.view.ProjectFragment;
+import com.muestreocontruscciones.muestreocontruscciones.view.SampleFragment;
+import com.muestreocontruscciones.muestreocontruscciones.view.TaskFragment;
+import com.muestreocontruscciones.muestreocontruscciones.view.WorkingHourFragment;
 
 public class principal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -71,25 +77,28 @@ public class principal extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        FragmentManager fragmentManager = getFragmentManager();
 
         if (id == R.id.nav_project) {
-            // Handle the camera action
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new ProjectFragment()).commit();
         } else if (id == R.id.nav_operation) {
-
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new OperationFragment()).commit();
         } else if (id == R.id.nav_tasks) {
-
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new TaskFragment()).commit();
         } else if (id == R.id.nav_analyst) {
-
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new AnalystFragment()).commit();
         } else if (id == R.id.nav_collaborator) {
-
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new CollaboratorFragment()).commit();
         } else if (id == R.id.nav_working_hour) {
-
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new WorkingHourFragment()).commit();
         } else if (id == R.id.nav_sample) {
-
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new SampleFragment()).commit();
         } else if (id == R.id.nav_account) {
-
+            //fragmentManager.beginTransaction().replace(R.id.content_frame, new ).commit();
+            //manejo de la cuenta
         } else if (id == R.id.loggout) {
-
+            //fragmentManager.beginTransaction().replace(R.id.content_frame, new ).commit();
+            //hacia el login
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
