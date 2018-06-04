@@ -18,8 +18,6 @@ import android.widget.EditText;
 
 import com.muestreocontruscciones.muestreocontruscciones.util.Connection;
 
-import java.sql.SQLException;
-
 public class Login extends AppCompatActivity{
 
     private UserLoginTask mAuthTask = null;
