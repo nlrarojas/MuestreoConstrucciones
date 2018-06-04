@@ -55,7 +55,7 @@ public class ProjectFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle state){
         super.onActivityCreated(state);
-        listaProject = Objects.requireNonNull(getView()).findViewById(R.id.listProjects);
+        listaProject = (ListView) Objects.requireNonNull(getView()).findViewById(R.id.listProjects);
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
@@ -65,7 +65,7 @@ public class ProjectFragment extends Fragment {
         ProjectAdapter adapter = new ProjectAdapter(activity,projects);
         listaProject.setAdapter(adapter);
 
-        crear = getView().findViewById(R.id.button);
+        crear = (Button) getView().findViewById(R.id.button);
         crear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

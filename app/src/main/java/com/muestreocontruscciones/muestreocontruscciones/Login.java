@@ -34,11 +34,11 @@ public class Login extends AppCompatActivity{
         setContentView(R.layout.activity_login);
 
         // Set up the login form.
-        mEmailView = findViewById(R.id.email);
+        mEmailView = (AutoCompleteTextView)findViewById(R.id.email);
 
-        mPasswordView = findViewById(R.id.password);
+        mPasswordView = (EditText) findViewById(R.id.password);
 
-        Button mEmailSignInButton = findViewById(R.id.email_sign_in_button);
+        Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {

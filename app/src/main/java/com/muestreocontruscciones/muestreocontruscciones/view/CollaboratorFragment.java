@@ -4,10 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.ProgressDialog;
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,14 +22,12 @@ import com.muestreocontruscciones.muestreocontruscciones.R;
 import com.muestreocontruscciones.muestreocontruscciones.controller.CollaboratorAdapter;
 import com.muestreocontruscciones.muestreocontruscciones.core.Collaborator;
 import com.muestreocontruscciones.muestreocontruscciones.core.Project;
-import com.muestreocontruscciones.muestreocontruscciones.model.CollaboratorData;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 
 @SuppressLint("ValidFragment")
@@ -41,7 +36,6 @@ public class CollaboratorFragment extends Fragment implements Response.Listener<
     private View view;
     private CollaboratorAdapter collaboratorAdapter;
     private Activity activity;
-    private CollaboratorData collaboratorData;
     private ArrayList<Collaborator> collaborators;
 
     ProgressDialog progressDialog;
@@ -52,7 +46,6 @@ public class CollaboratorFragment extends Fragment implements Response.Listener<
     @SuppressLint("ValidFragment")
     public CollaboratorFragment(Activity activity) {
         this.activity = activity;
-        this.collaboratorData = new CollaboratorData();
         this.collaborators = new ArrayList<>();
     }
 
