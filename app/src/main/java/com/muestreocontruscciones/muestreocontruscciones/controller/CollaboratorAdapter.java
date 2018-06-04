@@ -1,5 +1,6 @@
 package com.muestreocontruscciones.muestreocontruscciones.controller;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,6 +37,7 @@ public class CollaboratorAdapter extends BaseAdapter {
         return collaborators.get(i).getId();
     }
 
+    @SuppressLint("ViewHolder")
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         Collaborator collaborator = (Collaborator) getItem(position);

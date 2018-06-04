@@ -18,6 +18,8 @@ import android.widget.EditText;
 
 import com.muestreocontruscciones.muestreocontruscciones.util.Connection;
 
+import java.sql.SQLException;
+
 public class Login extends AppCompatActivity{
 
     private UserLoginTask mAuthTask = null;
@@ -116,6 +118,7 @@ public class Login extends AppCompatActivity{
 
         private final String mEmail;
         private final String mPassword;
+        private Connection connection;
 
         UserLoginTask(String email, String password) {
             mEmail = email;
@@ -124,7 +127,7 @@ public class Login extends AppCompatActivity{
 
         @Override
         protected Boolean doInBackground(Void... params) {
-            Connection connection;
+
             try {
                 connection = new Connection();
                 return connection.Iniciar_Sesion(mEmail, mPassword).equals("Logged");

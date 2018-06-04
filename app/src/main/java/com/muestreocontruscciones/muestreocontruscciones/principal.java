@@ -80,7 +80,7 @@ public class Principal extends AppCompatActivity
         FragmentManager fragmentManager = getFragmentManager();
 
         if (id == R.id.nav_project) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new ProjectFragment()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new ProjectFragment(this)).commit();
         } else if (id == R.id.nav_operation) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new OperationFragment()).commit();
         } else if (id == R.id.nav_tasks) {

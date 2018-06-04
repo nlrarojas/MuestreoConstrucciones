@@ -1,7 +1,5 @@
 package com.muestreocontruscciones.muestreocontruscciones.core;
 
-import java.util.Date;
-
 public class Project {
     private int id;
     private String nombre;
@@ -20,6 +18,8 @@ public class Project {
         this.fechaInicio = fechaInicio;
         this.fechaFinal = fechaFinal;
     }
+
+    public Project(){}
 
     public int getId() {
         return id;
