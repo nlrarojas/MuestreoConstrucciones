@@ -59,6 +59,10 @@ public class CollaboratorFragment extends Fragment implements Response.Listener<
         return view;
     }
 
+    private ArrayList<Collaborator> getCollaborators() {
+        return collaboratorData.getCollaborators();
+    }
+
     public void cargarWebService() {
         progressDialog = new ProgressDialog(activity);
         progressDialog.setMessage("Cargando colaboradores");
@@ -73,7 +77,7 @@ public class CollaboratorFragment extends Fragment implements Response.Listener<
     @Override
     public void onErrorResponse(VolleyError error) {
         progressDialog.hide();
-        Toast.makeText(activity, "No se pudo recuperar la información ", Toast.LENGTH_LONG).show();
+        Toast.makeText(activity, "No se pudo recuperar la información "+error, Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -103,5 +107,11 @@ public class CollaboratorFragment extends Fragment implements Response.Listener<
         listView = (ListView) view.findViewById(R.id.list_collaborators);
         collaboratorAdapter = new CollaboratorAdapter(activity, collaborators);
         listView.setAdapter(collaboratorAdapter);
+        Log.i("Response", "Respuesta");
+        try {
+            Toast.makeText(activity, jsonArray.getJSONObject(0).toString(), Toast.LENGTH_SHORT).show();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 }

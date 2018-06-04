@@ -82,9 +82,9 @@ public class Principal extends AppCompatActivity implements NavigationView.OnNav
         } else if (id == R.id.nav_operation) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new OperationFragment()).commit();
         } else if (id == R.id.nav_tasks) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new TaskFragment(this)).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new TaskFragment()).commit();
         } else if (id == R.id.nav_analyst) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new AnalystFragment(this)).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new AnalystFragment()).commit();
         } else if (id == R.id.nav_collaborator) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new CollaboratorFragment(this)).commit();
         } else if (id == R.id.nav_working_hour) {

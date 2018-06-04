@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.TaskFragment"
-    android:layout_weight="10"
-    android:orientation="vertical">
+    tools:context=".view.TaskFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:linksClickable="true"
-        android:textColor="#192045"
-        android:text="\nNuevo tarea\n"
-        android:layout_weight="1"
-        android:textStyle="bold"/>
-
-    <ListView
-        android:id="@+id/list_tareas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="9" />
-</LinearLayout>
+        android:text="@string/hello_blank_fragment" />
+
+</FrameLayout>
