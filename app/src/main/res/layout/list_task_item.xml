@@ -13,7 +13,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="0.74">
+            android:layout_weight="0.73">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
                     android:layout_height="wrap_content"
                     android:text="Nombre:     "/>
                 <TextView
-                    android:id="@+id/name"
+                    android:id="@+id/nameTask"
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:layout_width="wrap_content"
@@ -42,12 +42,12 @@
                 <TextView
                     android:id="@+id/txt2"
                     android:textStyle="bold"
-                    android:textSize="20dp"
+                    android:textSize="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Alias:     "/>
+                    android:text="Tipo actividad:     "/>
                 <TextView
-                    android:id="@+id/alias"
+                    android:id="@+id/tipoTarea"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
@@ -61,31 +61,12 @@
                 <TextView
                     android:id="@+id/txt3"
                     android:textStyle="bold"
-                    android:textSize="20dp"
+                    android:textSize="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Puesto:     "/>
+                    android:text="Descripción:     "/>
                 <TextView
-                    android:id="@+id/position"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="3"
-                    android:text="aaaaa"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_weight="3">
-                <TextView
-                    android:id="@+id/txt4"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Proyecto:     "/>
-                <TextView
-                    android:id="@+id/project"
+                    android:id="@+id/descripcionTarea"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
@@ -96,15 +77,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="0.25">
+            android:layout_weight="0.26">
             <Button
-                android:id="@+id/btnModificarCollaborator"
+                android:id="@+id/btnModificarTarea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Modificar" />
 
             <Button
-                android:id="@+id/btnEliminarCollaborator"
+                android:id="@+id/btnEliminarTarea"
                 android:layout_width="99dp"
                 android:layout_height="wrap_content"
                 android:text="Eliminar" />
