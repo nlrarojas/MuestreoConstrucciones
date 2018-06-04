@@ -19,9 +19,7 @@ import com.muestreocontruscciones.muestreocontruscciones.view.SampleFragment;
 import com.muestreocontruscciones.muestreocontruscciones.view.TaskFragment;
 import com.muestreocontruscciones.muestreocontruscciones.view.WorkingHourFragment;
 
-public class Principal extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
-
+public class Principal extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
