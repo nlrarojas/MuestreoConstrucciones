@@ -39,11 +39,11 @@ public class CreateProjectsFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle state){
         super.onActivityCreated(state);
-        nombre = Objects.requireNonNull(getView()).findViewById(R.id.nombre);
-        descripcion = getView().findViewById(R.id.descripcion);
-        estado = getView().findViewById(R.id.estado);
-        ubicacion = getView().findViewById(R.id.ubicacion);
-        crear = getView().findViewById(R.id.button);
+        nombre = (TextView) Objects.requireNonNull(getView()).findViewById(R.id.nombre);
+        descripcion = (TextView) getView().findViewById(R.id.descripcion);
+        estado = (TextView) getView().findViewById(R.id.estado);
+        ubicacion = (TextView) getView().findViewById(R.id.ubicacion);
+        crear = (Button) getView().findViewById(R.id.button);
 
         crear.setOnClickListener(new View.OnClickListener() {
             @Override

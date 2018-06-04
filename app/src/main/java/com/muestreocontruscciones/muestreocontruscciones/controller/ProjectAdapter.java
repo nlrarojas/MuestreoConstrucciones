@@ -49,11 +49,11 @@ public class ProjectAdapter extends BaseAdapter {
 
         view = LayoutInflater.from(contexto).inflate(R.layout.listview_project_item, null);
 
-        TextView nombre = view.findViewById(R.id.nombre);
-        TextView ubicacion = view.findViewById(R.id.ubicacion);
-        TextView estado = view.findViewById(R.id.estado);
-        Button modificar = view.findViewById(R.id.modificar);
-        Button eliminar = view.findViewById(R.id.eliminar);
+        TextView nombre = (TextView) view.findViewById(R.id.nombre);
+        TextView ubicacion = (TextView) view.findViewById(R.id.ubicacion);
+        TextView estado = (TextView) view.findViewById(R.id.estado);
+        Button modificar = (Button) view.findViewById(R.id.modificar);
+        Button eliminar = (Button) view.findViewById(R.id.eliminar);
 
         nombre.setText(project.getNombre());
         ubicacion.setText(project.getUbicacion());
