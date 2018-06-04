@@ -11,14 +11,6 @@ import android.view.ViewGroup;
 import com.muestreocontruscciones.muestreocontruscciones.R;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link OperationFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link OperationFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class OperationFragment extends Fragment {
     public OperationFragment() {
         // Required empty public constructor
